@@ -392,6 +392,10 @@ a{
 		font-size: 2rem;
 	}
 
+	.container-info img{
+		height: 15rem;
+	}
+
 	.container-info .p2{
 		grid-column: span 2;
 	}
