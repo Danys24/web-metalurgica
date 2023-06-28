@@ -1,0 +1,144 @@
+:root{
+	--color-10: #F30C0C;
+	--color-11: #F53535;
+	--color-12: #F05F5F;
+	--color-13: #F6DFDF;
+	--color-14: #F4ECEC;
+	--color-20: #062634;
+	--color-21: #163D4F;
+	--color-22: #34667C;
+	--color-23: #84AFC1;
+	--color-24: #CEE1EA;
+	--solor-s4: #F4FBE6;
+	--tittle-color: #293031;
+	--color-t1: #485354;
+	--color-t2: #737A7A;
+	--color-t3: #A0A9AA;
+	--font-size-h2-t: 2.4rem;
+	--font-size-h2-d: 2.8rem;
+	--font-size-p1: 1.63rem;
+	--font-size-p2: 2rem;
+	--font-size-p12: 0.75rem;
+	--font-size-p10: 0.625rem;
+	--font: 'Montserrat', sans-serif;
+}
+
+/*utils*/
+.block{
+	display: block;
+}
+
+.opacity{
+	opacity: 0.7;
+}
+
+.opacity-1{
+	opacity: 1;
+}
+
+/*components*/
+
+/*styles site*/
+
+h2{
+	color: var(--color-20);
+	text-align: center;
+}
+
+p{
+	color: var(--color-t1);
+	text-align: justify;
+}
+
+
+.biografia{
+	background-image: url("../assets/herofund.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: row;
+	height: 24rem;
+	box-shadow: 0px 0px 5px 1px rgb(100, 100, 100);
+}
+
+.container-biografia{
+	background-color: var(--color-14);
+	opacity: 0.7;
+	padding: 1rem;
+	width: 70%;
+	overflow-y: scroll;
+}
+
+.container-biografia p{
+	color: var(--color-21);
+	font-size: var(--font-size-p10);
+	font-weight: bold;
+}
+
+.fundador{
+	padding: 2rem 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.funda{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 1rem 0;
+}
+
+.menu-biografia{
+	width: 30%;
+}
+
+.menu-biografia h3{
+	background: var(--color-14);
+	font-size: var(--font-size-p12);
+	color: var(--color-11);
+	padding: 1rem 0.5rem;
+	cursor: pointer;
+}
+
+
+@media (min-width: 744px){
+
+	.biografia{
+		width: 80%;
+	}
+
+	.menu-biografia h3{
+		font-size: 1rem;
+	}
+
+	.container-biografia p{
+		font-size: 0.8rem;
+	}
+
+	
+
+}
+
+@media (min-width: 1024px){
+
+	body{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.menu-biografia h3{
+		font-size: 1.3rem;
+	}
+
+	.container-biografia p{
+		font-size: 1.1rem;
+	}
+	
+
+}
